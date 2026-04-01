@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: rpg-card
+  
+  datasource:
+    url: jdbc:h2:mem:testdb # Configures an in-memory database named 'testdb'
+    driver-class-name: org.h2.Driver
+    username: sa # Default username
+    password: "" # Default empty password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop # Configures Hibernate to create/update tables from entities
